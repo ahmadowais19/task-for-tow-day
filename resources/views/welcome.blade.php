@@ -1,4 +1,4 @@
-
+{{-- 
 
 @include('include.top')
 
@@ -23,20 +23,28 @@
         </div>
       </div> --}}
       <!-- partial:partials/_navbar.html -->
-@include('include.nav')
+{{-- @include('include.nav') --}}
       <!-- partial -->
-      <div class="container-fluid page-body-wrapper">
+      {{-- <div class="container-fluid page-body-wrapper"> --}}
         <!-- partial:partials/_sidebar.html -->
-  @include('include.said')
+  {{-- @include('include.said') --}}
         <!-- partial -->
-       @yield('content')
+                                                {{-- @yield('content') --}}
         <!-- main-panel ends -->
-      </div>
+      {{-- </div> --}}
       <!-- page-body-wrapper ends -->
-    </div>
+    {{-- </div> --}}
     <!-- container-scroller -->
     <!-- plugins:js -->
-    @include('include.foot')
+    {{-- @include('include.foot') --}}
     
 
-    @include('include.bottom')
+    {{-- @include('include.bottom') --}} 
+
+
+
+
+
+
+
+    

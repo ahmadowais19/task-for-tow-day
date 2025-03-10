@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use PHPUnit\TextUI\XmlConfiguration\RemoveCoverageElementProcessUncoveredFilesAttribute;
 
 /*
 |--------------------------------------------------------------------------
@@ -105,6 +104,21 @@ use PHPUnit\TextUI\XmlConfiguration\RemoveCoverageElementProcessUncoveredFilesAt
 // });
 
 
-Route::get('/ ', function () {
-    return view('layout/main');
+// Route::get('/ ', function () {
+//     return view('layout/main');
+// });
+
+use App\Http\Controllers\StudentController;
+
+Route::get("/", function () {
+    return view("students.index");
 });
+
+// Route::resource("contact",StudentController::class);
+// Return view("student.index", compact("students"));
+
+Route::resource('students', StudentController::class );
+
+
+
+// Route::get("student.index", StudentController::class);

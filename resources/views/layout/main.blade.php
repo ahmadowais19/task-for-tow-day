@@ -2,6 +2,7 @@
 
 @extends('welcome')
 
+
 @section('content')
 
 
@@ -700,5 +701,6 @@
 
     <!-- partial -->
   </div>
+
 
 @endsection
